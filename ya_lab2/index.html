@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Графический редактор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="program">
+        <div id="menu">
+            <select id="curveType">
+                <option value="circle">Круг</option>
+                <option value="ellipse">Эллипс</option>
+                <option value="hyperbola">Гипербола</option>
+                <option value="parabola">Парабола</option>
+            </select>
+            <input type="number" id="radius" placeholder="Радиус" value="100">
+            <input type="number" id="xCenter" placeholder="X центра" value="300">
+            <input type="number" id="yCenter" placeholder="Y центра" value="300">
+            <input type="checkbox" id="debugMode">
+            <label for="debugMode">Режим отладки</label>
+            <button onclick="drawCurve()">Нарисовать</button>
+        </div>
+        <canvas id="canvas" width="600" height="600"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
